@@ -1,0 +1,13 @@
+body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 450px;
+    background-color: #f8f9fa;
+}
+
+.status-box {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
