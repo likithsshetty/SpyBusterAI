@@ -4,9 +4,6 @@
   "version": "1.0",
   "description": "Blocks unsafe websites",
   "permissions": ["tabs", "activeTab", "webRequest", "webNavigation"],
-  "background": {
-    "service_worker": "background.js"
-  },
   "host_permissions": ["http://*/*", "https://*/*"],
   "action": {
     "default_popup": "popup.html",

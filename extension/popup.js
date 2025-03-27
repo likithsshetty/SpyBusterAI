@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("url").textContent = currentUrl;
 
         // Send URL to Flask API for analysis
-        fetch("http://127.0.0.1:5000/api/v1/", {
+        fetch("http://127.0.0.1/api/v1/", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ url: currentUrl })
