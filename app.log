@@ -1,0 +1,4 @@
+2025-05-04 12:28:26 [INFO] Received request data: {'url': 'https://chatgpt.com/c/68170b3b-64e4-8009-904f-0518357b8bf5'}
+2025-05-04 12:28:26 [INFO] Processing URL: https://chatgpt.com/c/68170b3b-64e4-8009-904f-0518357b8bf5
+2025-05-04 12:28:28 [INFO] Prediction result for https://chatgpt.com/c/68170b3b-64e4-8009-904f-0518357b8bf5: Safe
+2025-05-04 12:28:28 [INFO] 127.0.0.1 - - [04/May/2025 12:28:28] "POST /api/v1/ HTTP/1.1" 200 -
