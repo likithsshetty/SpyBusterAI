@@ -1,12 +1,4 @@
-To add logging to your Flask application, you can use Python’s built-in `logging` module. This will allow you to log information such as incoming requests, predictions, and any errors to a log file for future reference.
 
-Here’s how you can modify your script to include logging to a file:
-
----
-
-### ✅ **Modified Code with Logging:**
-
-```python
 # Importing required libraries
 from flask import Flask, request, jsonify
 import numpy as np
@@ -37,6 +29,10 @@ except FileNotFoundError as e:
 
 # Initialize Flask app
 app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return "Welcome to the URL Safety Prediction API!"
 
 @app.route('/api/v1/', methods=['POST'])
 def predict():
@@ -77,18 +73,3 @@ def predict():
 if __name__ == "__main__":
     logging.info("Starting Flask app...")
     app.run(debug=True, host='0.0.0.0', port=80)
-```
-
----
-
-### ✅ **What This Adds:**
-
-* A `logs/app.log` file storing all log messages.
-* Logging of:
-
-  * Model loading success/failure.
-  * Incoming request data.
-  * Prediction results.
-  * Any exceptions that occur during processing.
-
-Would you like me to also configure log file rotation (to prevent it from growing indefinitely)?
